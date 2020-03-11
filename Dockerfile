@@ -7,6 +7,7 @@ RUN /opt/conda/envs/cubeenv/bin/pip install --quiet --no-cache-dir \
     hdstats==0.1.3 \
     lark-parser==0.8.2 \
     odc-algo==0.1.dev436+gcf443b6 \
+    odc-ui==0.1.dev436+gcf443b6 \
     --extra-index-url=https://packages.dea.ga.gov.au
 
 # Enable additional Lab extensions
