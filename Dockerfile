@@ -12,3 +12,15 @@ RUN /opt/conda/envs/cubeenv/bin/pip install --quiet --no-cache-dir \
 
 # Enable additional Lab extensions
 RUN jupyter labextension install dask-labextension
+
+RUN /opt/conda/envs/cubeenv/bin/pip install --quiet --no-cache-dir \
+    blosc==1.8.6 \
+    cloudpickle==1.3.0 \
+    dask==2.12.0 \
+    distributed==2.12.0 \
+    lz4==3.0.2 \
+    msgpack==1.0.0 \
+    numpy==1.18.1 \
+    toolz==0.10.0 \
+    tornado==6.0.4 \
+    xarray==0.15.0
