@@ -1,6 +1,6 @@
-# datacube-notebook-docker-images
+# Datacube Notebook Docker Images
 
-:warning: This is an ancillary repository that contains customized Docker images. :warning:
+:warning: This is an ancillary repository that contains customized Docker images :warning:
 
 ## Building and pushing to Docker Hub
 
