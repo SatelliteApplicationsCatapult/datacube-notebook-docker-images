@@ -1,4 +1,4 @@
-FROM luigidifraia/datacube-notebook:v1.3.1-alpha
+FROM luigidifraia/datacube-notebook:v3.0.2-alpha
 
 LABEL maintainer="Luigi Di Fraia"
 
