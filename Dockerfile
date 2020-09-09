@@ -8,3 +8,14 @@ RUN /opt/conda/envs/cubeenv/bin/pip install --no-cache-dir \
     rm -rf /home/$NB_USER/.local && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
+
+# Install extra packages as root
+USER root
+
+RUN apt-get update \
+    && apt-get install -yq --no-install-recommends \
+    lftp \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Switch back to jovyan to avoid accidental container runs as root
+USER $NB_UID
